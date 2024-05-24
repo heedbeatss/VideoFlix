@@ -1,0 +1,11 @@
+{
+  "name": "videos-clipe-flix",
+  "version": "1.0.0",
+  "description": "Vídeos da sessão vídeos:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
