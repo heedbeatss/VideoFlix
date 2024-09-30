@@ -50,7 +50,7 @@ body {
     color: var(--cinza-texto);
 }
 
-.pesquisar__label {
+/* .pesquisar__label {
     background-image: url(../img/cabecalho/search.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -59,27 +59,30 @@ body {
     border-left: none;
     padding: 7px 15px 6px;
     cursor: pointer;
-}
+} */
 
 .cabecalho__icones__item {
     display: flex;
     gap: 15%;
 }
 
-.cabecalho__audio {
+/* .cabecalho__audio {
     background-image: url(../img/cabecalho/mic.png);
     padding: 20px;
     display: none;
-}
+} */
 
 .cabecalho__videos {
+    display: flex;
+    flex-direction: column;
     background-image: url(../img/cabecalho/up_videos.png); 
     background-repeat: no-repeat;
     background-position: center;
     padding: 30px;
+    color: black;
 }
 
-.cabecalho__apps {
+/* .cabecalho__apps {
     background-image: url(../img/cabecalho/apps.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +94,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     padding: 13px 30px 13px 13px;
-}
+} */
 
 .cabecalho__avatar {
     background-image: url(../img/cabecalho/Avatar.jpg);
@@ -99,6 +102,49 @@ body {
     background-position: center;
     padding: 13px 30px 13px 13px;
 }
+
+/* Formulário */
+
+.formulario-container {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.formulario-container form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.formulario-container input {
+    background-color: rgb(91, 91, 117);
+}
+
+.formulario-container button {
+    background-color: black;
+    color: white;
+}
+
+.formulario-container select {
+    background-color: white;
+    color: black;
+    border: black;
+}
+
+.formulario-container option {
+    background-color: white;
+    color: black;
+    border: black;
+}
+
 
 /* MENU LATERAL */
 

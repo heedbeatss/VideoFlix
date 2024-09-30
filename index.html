@@ -34,10 +34,29 @@
                 <a href="#" class="cabecalho__videos"></a>
                 <a href="#" class="cabecalho__avatar"></a>
             </div>
-
         </nav>
-
     </header>
+
+    
+    <div class="formulario-container" style="display: none;" id="formulario-container">
+        <form id="adicionar-video-form">
+            <label for="video-title">Título do Vídeo:</label>
+            <input type="text" id="video-title" name="video-title" required>
+    
+            <label for="video-url">URL do Vídeo:</label>
+            <input type="url" id="video-url" name="video-url" required>
+    
+            <label for="video-genero">Gênero:</label>
+            <select id="video-genero" name="video-genero" required>
+                <option value="Hip-Hop">Hip-Hop</option>
+                <option value="Rock">Rock</option>
+                <option value="Eletronica">Eletrônica</option>
+                <option value="Classica">Clássica</option>
+            </select>
+    
+            <button type="submit">Adicionar Vídeo</button>
+        </form>
+    </div>
 
     <!-- Menu lateral -->
 

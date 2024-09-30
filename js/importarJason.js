@@ -59,6 +59,21 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Seleciona o link e o container do formulário
+    const linkAdicionar = document.querySelector('.cabecalho__videos');
+    const formularioContainer = document.getElementById('formulario-container');
+
+    // Adiciona um evento de clique ao link
+    linkAdicionar.addEventListener('click', function(event) {
+        event.preventDefault(); // Previne o comportamento padrão do link
+        // Alterna a visibilidade do formulário
+        if (formularioContainer.style.display === 'none') {
+            formularioContainer.style.display = 'block'; // Exibe o formulário
+        } else {
+            formularioContainer.style.display = 'none'; // Oculta o formulário
+        }
+    });
+
     // Função para filtrar vídeos por gênero
     function filtrarVideosPorGenero(genero) {
         const videosFiltrados = todosOsVideos.filter(video => video.genero === genero);
