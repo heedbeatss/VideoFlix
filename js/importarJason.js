@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
         exibirVideos(videosFiltrados);
     }
 
-    // Função para filtrar vídeos por artista
-    function filtrarVideosPorArtista(artista) {
-        const videosFiltrados = todosOsVideos.filter(video => video.title.includes(artista));
-        exibirVideos(videosFiltrados);
-    }
+    // // Função para filtrar vídeos por artista
+    // function filtrarVideosPorArtista(artista) {
+    //     const videosFiltrados = todosOsVideos.filter(video => video.title.includes(artista));
+    //     exibirVideos(videosFiltrados);
+    // }
 
     // Função para filtrar vídeos por título de pesquisa
     function filtrarVideosPorPesquisa(query) {
@@ -104,14 +104,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Adicionar event listeners para os itens do menu de artistas
-    const artistas = document.querySelectorAll('.menu__lista a');
-    artistas.forEach(artista => {
-        artista.addEventListener('click', function(event) {
-            event.preventDefault(); // Evita o comportamento padrão do link
-            const artistaSelecionado = this.querySelector('span').textContent; // Pega o nome do artista
-            filtrarVideosPorArtista(artistaSelecionado); // Filtra vídeos pelo nome do artista
-        });
-    });
+    // const artistas = document.querySelectorAll('.menu__lista a');
+    // artistas.forEach(artista => {
+    //     artista.addEventListener('click', function(event) {
+    //         event.preventDefault(); // Evita o comportamento padrão do link
+    //         const artistaSelecionado = this.querySelector('span').textContent; // Pega o nome do artista
+    //         filtrarVideosPorArtista(artistaSelecionado); // Filtra vídeos pelo nome do artista
+    //     });
+    // });
 
     // Chamar a função para carregar os vídeos quando a página carregar
     carregarVideos();

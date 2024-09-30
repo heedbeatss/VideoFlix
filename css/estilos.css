@@ -105,6 +105,7 @@ body {
 .menu__container {
     background-color: var(--preto);
     font-size: 14px;
+    display: none;
 }
 
 .menu__itens:hover {
@@ -180,22 +181,16 @@ body {
     content: url(../img/menu/videos.png);
 }
 
-.icone__filmes::before {
-    content: url(../img/menu/filmes.png);
-}
-
-.icone__jogos::before {
-    content: url(../img/menu/jogos.png);
-}
 
 /* SECAO SUPERIOR */
 
 .superior__secao__container {
     height: 63px;
+    width: 100%;
     color: white;
     font-size: 16px;
     background: linear-gradient(to right,var(--azul-claro) 15%, black 50%, var(--azul-claro)) 15%;
-    padding: 0 20px;
+    padding: 0px;
     position: fixed;
     top: 80px;
     right: 0;
@@ -263,6 +258,31 @@ body {
     padding: 10px 0 20px 0;
 }
 
+@media(max-width: 834px) {
+.logo__item{
+    display: none;
+}
+
+.pesquisar__input {
+    width: 60%;
+}
+
+.superior__secao__container {
+    width: 100%;
+}
+
+.superior__item {
+    width: 40%;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.rodape__container {
+    
+}
+
+}
+
 @media(min-width: 834px) {
 
     body {
@@ -271,13 +291,14 @@ body {
 
     /* ESTILOS DO MENU LATERAL */
 
-    .menu__container {
+    /* .menu__container {
         font-size: 16px;
+        display:flex;
     }
 
     .menu__lista {
         padding-top: 15px;
-    }
+    } */
 
     .menu__lista li {
         width: 100%;
@@ -289,13 +310,13 @@ body {
         border-top: var(--azul-medio) 1px solid;
         border-bottom: var(--azul-medio) 1px solid;
         width: auto;
-        left: 82px;
+        /* left: 82px; */
     }
 
     /*ESTILOS SEÇÃO VÍDEOS */
 
     .videos__container {
-        padding-left: 90px;
+        /* padding-left: 90px; */
         padding-right: 17px;
     }
 
@@ -316,15 +337,15 @@ body {
 
     /* SEÇÃO SUPERIOR */
 
-    .superior__secao__container {
+    /* .superior__secao__container {
         left: 247px;
-    }
+    } */
 
     /* ESTILOS DO MENU LATERAL */
 
-    .menu__lista {
+    /* .menu__lista {
         border-bottom: 1.5px solid var(--azul-medio);
-    }
+    } */
 
     /* ESTILOS VIDEOS */
 
