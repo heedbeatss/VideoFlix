@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Seleciona o link e o container do formulário
     const linkAdicionar = document.querySelector('.cabecalho__videos');
     const formularioContainer = document.getElementById('formulario-container');
+    const videoForm = document.getElementById('adicionar-video-form');
+    
 
     // Adiciona um evento de clique ao link
     linkAdicionar.addEventListener('click', function(event) {
@@ -73,6 +75,38 @@ document.addEventListener("DOMContentLoaded", function() {
             formularioContainer.style.display = 'none'; // Oculta o formulário
         }
     });
+
+   // Adiciona um evento de envio ao formulário
+videoForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+
+    // Captura os dados do formulário
+    const videoTitle = document.getElementById('video-title').value;
+    const videoURL = document.getElementById('video-url').value;
+    const videoGenero = document.getElementById('video-genero').value;
+
+    // Cria um objeto de vídeo para adicionar à lista
+    const novoVideo = {
+        title: videoTitle,
+        url: videoURL,
+        genero: videoGenero,
+        views: '0', // Exemplo de views, ajuste conforme necessário
+        uploaded: new Date().toLocaleDateString() // Data de upload, ajuste conforme necessário
+    };
+
+    // Adiciona o novo vídeo ao array de todos os vídeos
+    todosOsVideos.push(novoVideo);
+
+    // Exibe todos os vídeos atualizados
+    exibirVideos(todosOsVideos);
+
+    // Limpa os campos do formulário
+    videoForm.reset();
+    formularioContainer.style.display = 'none'; // Oculta o formulário após adicionar o vídeo
+});
+
+    
+    
 
     // Função para filtrar vídeos por gênero
     function filtrarVideosPorGenero(genero) {
