@@ -263,17 +263,39 @@ body {
 /* SEÇÃO VÍDEOS */
 
 .videos__container {
+    display: grid;
     color: var(--cinza-texto);
     background-color: white;
+    gap: 16px; /* Espaçamento entre os itens */
     padding: 153px 20px 10px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define um mínimo e máximo para as colunas */
+    
+}
+
+.videos__item {
+    
+}
+
+
+.videos__item li {
+    height: 200px; /* Altura fixa */
+    width: 200px; /* Largura total */
+    
 }
 
 .videos__item:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     background-color: var(--cinza-claro);
     z-index: 2;
     transition: .5s;
 
+}
+
+/* Miniaturas dentro dos vídeos */
+.videos__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
 }
 
 .descricao-video h3 {
