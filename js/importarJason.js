@@ -63,62 +63,69 @@ document.addEventListener("DOMContentLoaded", function() {
     const linkAdicionar = document.querySelector('.cabecalho__videos');
     const formularioContainer = document.getElementById('formulario-container');
     const videoForm = document.getElementById('adicionar-video-form');
-    
 
     // Adiciona um evento de clique ao link
     linkAdicionar.addEventListener('click', function(event) {
         event.preventDefault(); // Previne o comportamento padrão do link
         // Alterna a visibilidade do formulário
-        if (formularioContainer.style.display === 'none') {
-            formularioContainer.style.display = 'block'; // Exibe o formulário
-        } else {
-            formularioContainer.style.display = 'none'; // Oculta o formulário
-        }
+        formularioContainer.style.display = formularioContainer.style.display === 'none' ? 'block' : 'none';
     });
 
-   // Adiciona um evento de envio ao formulário
-videoForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+    // Função para enviar um novo vídeo para a API
+    function adicionarVideoNaAPI(novoVideo) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://localhost:3000/videos', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
 
-    // Captura os dados do formulário
-    const videoTitle = document.getElementById('video-title').value;
-    const videoURL = document.getElementById('video-url').value;
-    const videoGenero = document.getElementById('video-genero').value;
+        xhr.onload = function() {
+            if (xhr.status === 201) {
+                console.log('Vídeo adicionado com sucesso!');
+                carregarVideos(); // Recarrega a lista de vídeos após adicionar
+            } else {
+                console.error('Erro ao adicionar vídeo:', xhr.responseText);
+            }
+        };
 
-    // Cria um objeto de vídeo para adicionar à lista
-    const novoVideo = {
-        title: videoTitle,
-        url: videoURL,
-        genero: videoGenero,
-        views: '0', // Exemplo de views, ajuste conforme necessário
-        uploaded: new Date().toLocaleDateString() // Data de upload, ajuste conforme necessário
-    };
+        xhr.send(JSON.stringify(novoVideo)); // Envia o novo vídeo como JSON
+    }
 
-    // Adiciona o novo vídeo ao array de todos os vídeos
-    todosOsVideos.push(novoVideo);
+    // Adiciona um evento de envio ao formulário
+    videoForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Previne o comportamento padrão de envio do formulário
 
-    // Exibe todos os vídeos atualizados
-    exibirVideos(todosOsVideos);
+        // Captura os dados do formulário
+        const videoTitle = document.getElementById('video-title').value;
+        const videoURL = document.getElementById('video-url').value;
+        const videoGenero = document.getElementById('video-genero').value;
 
-    // Limpa os campos do formulário
-    videoForm.reset();
-    formularioContainer.style.display = 'none'; // Oculta o formulário após adicionar o vídeo
-});
+        // Cria um objeto de vídeo para adicionar à lista
+        const novoVideo = {
+            title: videoTitle,
+            url: videoURL,
+            genero: videoGenero,
+            views: '0', // Exemplo de views, ajuste conforme necessário
+            uploaded: new Date().toLocaleDateString() // Data de upload, ajuste conforme necessário
+        };
 
-    
-    
+        // Adiciona o novo vídeo ao array de todos os vídeos (opcional, já que vamos carregar da API)
+        todosOsVideos.push(novoVideo);
+
+        // Exibe todos os vídeos atualizados (pode ser removido se apenas a API for carregada)
+        exibirVideos(todosOsVideos);
+
+        // Envia o novo vídeo para a API
+        adicionarVideoNaAPI(novoVideo);
+
+        // Limpa os campos do formulário
+        videoForm.reset();
+        formularioContainer.style.display = 'none'; // Oculta o formulário após adicionar o vídeo
+    });   
 
     // Função para filtrar vídeos por gênero
     function filtrarVideosPorGenero(genero) {
         const videosFiltrados = todosOsVideos.filter(video => video.genero === genero);
         exibirVideos(videosFiltrados);
     }
-
-    // // Função para filtrar vídeos por artista
-    // function filtrarVideosPorArtista(artista) {
-    //     const videosFiltrados = todosOsVideos.filter(video => video.title.includes(artista));
-    //     exibirVideos(videosFiltrados);
-    // }
 
     // Função para filtrar vídeos por título de pesquisa
     function filtrarVideosPorPesquisa(query) {
@@ -151,16 +158,6 @@ videoForm.addEventListener('submit', function(event) {
             filtrarVideosPorGenero(generoSelecionado); // Filtrar vídeos pelo gênero
         });
     });
-
-    // Adicionar event listeners para os itens do menu de artistas
-    // const artistas = document.querySelectorAll('.menu__lista a');
-    // artistas.forEach(artista => {
-    //     artista.addEventListener('click', function(event) {
-    //         event.preventDefault(); // Evita o comportamento padrão do link
-    //         const artistaSelecionado = this.querySelector('span').textContent; // Pega o nome do artista
-    //         filtrarVideosPorArtista(artistaSelecionado); // Filtra vídeos pelo nome do artista
-    //     });
-    // });
 
     // Chamar a função para carregar os vídeos quando a página carregar
     carregarVideos();
