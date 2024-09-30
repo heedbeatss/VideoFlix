@@ -300,9 +300,9 @@ body {
         padding-top: 15px;
     } */
 
-    .menu__lista li {
+    /* .menu__lista li {
         width: 100%;
-    }
+    } */
 
     /* ESTILOS DA SECAO SUPERIOR */
 
@@ -328,7 +328,7 @@ body {
 
     .rodape__container {
         height: 420px;
-        padding-left: 74px;
+        /* padding-left: 74px; */
     }
 
 }
@@ -351,13 +351,13 @@ body {
 
     .videos__container {
         padding-right: 10px;
-        padding-left: 248px;
+        /* padding-left: 248px; */
     }
 
     /* ESTILOS RODAPÉ */
 
     .rodape__container {
-        padding-left: 240px;
+        /* padding-left: 240px; */
         height: 225px;
     }
 
