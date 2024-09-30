@@ -6,7 +6,9 @@
         "channel": "Future",
         "views": "31 mi",
         "uploaded": "há 1 mês",
-        "url": "https://www.youtube.com/embed/-kSAvHlXRUs?si=p2pKDFKcKw0buNta"
+        "url": "https://www.youtube.com/embed/I0fgkcTbBoI?si=JBQhZ0CTIPja9S5o",
+        "genero": "Hip-Hop"
+        
     },
     {
         "id": 2,
@@ -14,7 +16,8 @@
         "channel": "MUSHROOMHEAD",
         "views": "14 mi",
         "uploaded": "há 14 anos",
-        "url": "https://www.youtube.com/embed/kOaqcfTZgno?si=HTAOeqISRlOQ0y48"
+        "url": "https://www.youtube.com/embed/kOaqcfTZgno?si=HTAOeqISRlOQ0y48",
+        "genero": "Rock"
     },
     {
         "id": 3,
@@ -22,7 +25,8 @@
         "channel": "Playboi Carti",
         "views": "26 mi",
         "uploaded": "há 4 meses",
-        "url": "https://www.youtube.com/embed/ftaXMKV3ffE?si=fGhwp3yyP_6lRA03"
+        "url": "https://www.youtube.com/embed/ftaXMKV3ffE?si=fGhwp3yyP_6lRA03",
+        "genero": "Hip-Hop"
     },
     {
         "id": 4,
@@ -30,7 +34,8 @@
         "channel": "Zelly Ocho",
         "views": "34 mil",
         "uploaded": "há 2 anos",
-        "url": "https://www.youtube.com/embed/J1ngHxY3res?si=Bk0PYdIB7-24DBiE"
+        "url": "https://www.youtube.com/embed/J1ngHxY3res?si=Bk0PYdIB7-24DBiE",
+        "genero": "Hip-Hop"
     },   
     {
         "id": 5,
@@ -38,7 +43,8 @@
         "channel": "MONYPOWRSPT",
         "views": "32 mi",
         "uploaded": "há 6 anos",
-        "url": "https://www.youtube.com/embed/BmKNq2_R9TI?si=d0gCVLxxKzKd4vih"
+        "url": "https://www.youtube.com/embed/BmKNq2_R9TI?si=d0gCVLxxKzKd4vih",
+        "genero": "Hip-Hop"
     },
     {
         "id": 6,
@@ -46,7 +52,8 @@
         "channel": "Mudvayne",
         "views": "59 mi",
         "uploaded": "há 14 anos",
-        "url": "https://www.youtube.com/embed/YIqbdnaPcT8?si=Yyu9cVCSxAOcAJzE"
+        "url": "https://www.youtube.com/embed/YIqbdnaPcT8?si=Yyu9cVCSxAOcAJzE",
+        "genero": "Rock"
     },
     {
         "id": 7,
@@ -54,15 +61,17 @@
         "channel": "Pantera",
         "views": "32 mi",
         "uploaded": "há 14 anos",
-        "url": "https://www.youtube.com/embed/_XI1DD_vJuY?si=yWiv8yf2UwudIGPa"
+        "url": "https://www.youtube.com/embed/_XI1DD_vJuY?si=yWiv8yf2UwudIGPa",
+        "genero": "Rock"
     },
     {
         "id": 8,
-        "title": "Rammstein - Du Hast (Official 4K Video)",
-        "channel": "Rammstein Official",
-        "views": "575 mil",
-        "uploaded": "há 8 anos",
-        "url": "https://www.youtube.com/embed/W3q8Od5qJio?si=R-F-_W-CUgv3QVo3"
+        "title": "Mozart - Lacrimosa",
+        "channel": "Rosa Music",
+        "views": "97 mil",
+        "uploaded": "há 6 anos",
+        "url": "https://www.youtube.com/embed/k1-TrAvp_xs?si=JYEKKmInDLECC_QG",
+        "genero": "Classica"   
     },
     {
         "id": 9,
@@ -70,7 +79,8 @@
         "channel": "Kraftwerk",
         "views": "610 mil",
         "uploaded": "há 7 anos",
-        "url": "https://www.youtube.com/embed/SGex55Sxi6A?si=fLq08C269Rn7UMHD"
+        "url": "https://www.youtube.com/embed/SGex55Sxi6A?si=fLq08C269Rn7UMHD",
+        "genero": "Eletronica"
     },
     {
         "id": 10,
@@ -78,7 +88,8 @@
         "channel": "Yung Lean",
         "views": "7,2 mi",
         "uploaded": "há 14 anos",
-        "url": "https://www.youtube.com/embed/jqxbrZiazZA?si=wZxDARFUVgcyyDE6"
+        "url": "https://www.youtube.com/embed/jqxbrZiazZA?si=wZxDARFUVgcyyDE6",
+        "genero": ["Hip-Hop", "Eletronica"]
     },
     {
         "id": 11,
@@ -94,7 +105,8 @@
         "channel": "Gucci Mane",
         "views": "606 mil",
         "uploaded": "há 6 anos",
-        "url": "https://www.youtube.com/embed/uo14xGYwWd4?si=l6ejZ4svGBBcGKtA"
+        "url": "https://www.youtube.com/embed/uo14xGYwWd4?si=l6ejZ4svGBBcGKtA",
+        "genero": "Hip-Hop"
     },   
     {
         "id": 13,
@@ -102,7 +114,8 @@
         "channel": "LIL UZI VERT",
         "views": "152 mi",
         "uploaded": "há 1 anos",
-        "url": "https://www.youtube.com/embed/UhbixyxgsiU?si=Kn0yVKzUYnN_UZp2"
+        "url": "https://www.youtube.com/embed/UhbixyxgsiU?si=Kn0yVKzUYnN_UZp2",
+        "genero": "Hip-Hop"
     },
     {
         "id": 14,
@@ -110,7 +123,8 @@
         "channel": "Famous Dex",
         "views": "142 mi",
         "uploaded": "há 6 anos",
-        "url": "https://www.youtube.com/embed/hTLrY2tJkcc?si=HFGINSrnbtoE6sYN"
+        "url": "https://www.youtube.com/embed/hTLrY2tJkcc?si=HFGINSrnbtoE6sYN",
+        "genero": "Hip-Hop"
     },
     {
         "id": 15,
@@ -118,7 +132,8 @@
         "channel": "Roadrunner Records",
         "views": "52 mi",
         "uploaded": "há 14 anos",
-        "url": "https://www.youtube.com/embed/F_6IjeprfEs?si=1ZDTAZP5b3Is96AF"
+        "url": "https://www.youtube.com/embed/F_6IjeprfEs?si=1ZDTAZP5b3Is96AF",
+        "genero": "Rock"
     },
     {
         "id": 16,
@@ -126,7 +141,8 @@
         "channel": "Korn",
         "views": "27 mi",
         "uploaded": "há 14 anos",
-        "url": "https://www.youtube.com/embed/ZU2k-U2Ze0o?si=tJUZmlQDB8vGqda3"
+        "url": "https://www.youtube.com/embed/ZU2k-U2Ze0o?si=tJUZmlQDB8vGqda3",
+        "genero": "Rock"
     }
 ]
 }

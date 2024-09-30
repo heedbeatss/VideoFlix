@@ -25,7 +25,7 @@
             <div class="cabecalho__pesquisar__item">
                 <form action="">
                     <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                    <label for="pesquisar" class="pesquisar__label"></label>
+                    <label for="pesquisar"></label>
                 </form>
                 <a href="#" class="cabecalho__audio"></a>
             </div>
@@ -44,32 +44,12 @@
     <aside class="menu__container">
         <ul class="menu__lista">
             <li>
-                <a class="menu__itens" href="#">
+                <a class="menu__itens" href="">
                     <i class="icone__inicio icone-item"></i>
                     <span>Início</span></a>
             </li>
-      
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__biblioteca icone-item"></i>
-                    <span>Biblioteca</span></a>
-            </li>
         </ul>
 
-        <ul class="menu__lista">
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__historico icone-item"></i>
-                    <span>Histórico</span></a>
-            </li>
-
-        
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__like icone-item"></i>
-                    <span>Marcados com like</span></a>
-            </li>
-        </ul>
 
         <ul class="menu__lista">
             <!-- <li>
@@ -87,13 +67,13 @@
             <li>
                 <a class="menu__itens" href="#">
                     <i class="icone__korn icone-item"></i>
-                    <span>KoRn</span></a>
+                    <span>Kon</span></a>
             </li>
 
             <li>
                 <a class="menu__itens" href="#">
                     <i class="icone__mudvayne icone-item"></i>
-                    <span>MuDvAyNe</span></a>
+                    <span>Mudvayne</span></a>
             </li>
 
             <li>
@@ -118,27 +98,19 @@
                 <a class="menu__itens" href="#">
                     <i class="icone__liluzi icone-item"></i>
                     <span>Lil Uzi Vert</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens inscricoes" href="#">Mais Visualizados</a>
-            </li>
-        </ul>
-
-               
-           
+            </li>               
         </ul>
     </aside>
 
     <!-- Seção superior -->
 
     <section class="superior__secao__container">
-        <a class="superior__item" href="#">Hip-Hop</a>
-        <a class="superior__item" href="#">Rock</a>
-        <a class="superior__item" href="#">Eletrônica</a>
-        <a class="superior__item" href="#">Clássica</a>
+        <a class="superior__item" href="#" data-genero="Hip-Hop">Hip-Hop</a>
+        <a class="superior__item" href="#" data-genero="Rock">Rock</a>
+        <a class="superior__item" href="#" data-genero="Eletronica">Eletrônica</a>
+        <a class="superior__item" href="#" data-genero="Classica">Clássica</a>
     </section>
-
+    
     <!-- Vídeos -->
 
     <ul class="videos__container">
@@ -148,12 +120,11 @@
     <!-- <Seção rodapé> -->
     <footer class="rodape__container">
         <section>
-            <h2 class="rodape__titulo">Videos Clipes</h2>
-            <p class="rodape__texto">Musica</p>
-            <p>Hip Hop</p>
-            <p>Rock</p>
-            <p>Eletrônica</p>
-            <p>Clássica</p>
+            <h2 class="rodape__titulo">Videos Clipes:</h2>
+            <a class="superior__item" href="#" data-genero="Hip-Hop">Hip-Hop</a>
+            <a class="superior__item" href="#" data-genero="Rock">Rock</a>
+            <a class="superior__item" href="#" data-genero="Eletronica">Eletrônica</a>
+            <a class="superior__item" href="#" data-genero="Classica">Clássica</a>
         </section>
 
         
