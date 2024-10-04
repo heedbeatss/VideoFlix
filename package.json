@@ -1,9 +1,8 @@
 {
   "name": "video-flix",
   "version": "1.0.0",
-  "description": "Vídeos da sessão vídeos:",
   "scripts": {
-    "start": "echo $PORT && json-server --watch listaVideoClipes.json --port $PORT --host 0.0.0.0"
+    "start": "json-server --watch listaVideoClipes.json --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
     "json-server": "^0.17.0"
