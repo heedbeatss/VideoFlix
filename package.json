@@ -1,8 +1,7 @@
 {
-  "name": "videos-clipe-flix",
+  "name": "video-flix",
   "version": "1.0.0",
   "description": "Vídeos da sessão vídeos:",
-  "main": "index.js",
   "scripts": {
     "start": "json-server --watch listaVideoClipes.json --port $PORT --host 0.0.0.0"
   },
