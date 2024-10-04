@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function carregarVideos() {
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://localhost:3000/videos', true);
+        xhr.open('GET', 'https://videoflix-z2v3.onrender.com/videos', true);
         xhr.onload = function() {
             if (xhr.status === 200) {
                 todosOsVideos = JSON.parse(xhr.responseText);
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function adicionarVideoNaAPI(novoVideo) {
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://localhost:3000/videos', true);
+        xhr.open('POST', 'https://videoflix-z2v3.onrender.com/videos', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onload = function() {
             if (xhr.status === 201) {
